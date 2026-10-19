@@ -1,0 +1,15 @@
+{
+  "name": "json",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass --no-source-map src/main.scss output.css"
+  },
+  "dependencies": {
+    "sass": "^1.105.2"
+  }
+}
