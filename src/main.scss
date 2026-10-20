@@ -1,5 +1,4 @@
-h1{
 
-    background-color: orange;
-
-}
+@use "sections/header";
+@use "sections/footer";
+@use "sections/content";

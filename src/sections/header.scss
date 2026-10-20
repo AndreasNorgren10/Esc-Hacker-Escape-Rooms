@@ -1,0 +1,50 @@
+body{
+    
+
+}
+
+.header{
+    display:grid;
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin:0 auto;
+    background-color:#011827;
+    font:24px;
+    font-family: Roboto bold;
+    min-height: 100vh;
+    
+}
+
+.menu{
+    @media (max-width: 600px) {
+        display:none;}
+}
+
+#onlineBtn{
+     
+}
+
+
+#Logo{
+    width:128px;
+    height:82px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    float: left;
+}
+
+#MenuIcon{
+    display:grid;
+    grid-template-columns:1fr;
+   width:100vw;
+   height:auto;
+    
+}
+
+#onSiteBtn{
+    background-color:#8ACFE5;
+    color:#011827;
+    
+
+}
