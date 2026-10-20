@@ -1,0 +1,36 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #011827;
+  font: 24px;
+  font-family: Roboto bold;
+  min-height: 100vh;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+}
+
+#Logo {
+  width: 128px;
+  height: 82px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  float: left;
+}
+
+#MenuIcon {
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+
+#onSiteBtn {
+  background-color: #8ACFE5;
+  color: #011827;
+}
