@@ -1,50 +1,65 @@
-body{
-    
+body {
+  margin: 0;
+  background: #efefef;
+  font-family: 'Roboto', sans-serif;
 
 }
 
-.header{
-    display:grid;
-    grid-template-columns: 1fr;
-    max-width: 500px;
-    margin:0 auto;
-    background-color:#011827;
-    font:24px;
-    font-family: Roboto bold;
-    min-height: 100vh;
-    
+.Header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "logo title"
+    "image image";
+
+  background: #02152b;
 }
 
-.menu{
-    @media (max-width: 600px) {
+#Logo {
+  width: 128px;
+  height: 82px;
+  padding: 1rem;
+  font-size:24px;
+}
+
+.Header h1 {
+  color: white;
+  align-self: center;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.menu {
+  @media (max-width: 600px) {
         display:none;}
-}
-
-#onlineBtn{
-     
-}
-
-
-#Logo{
-    width:128px;
-    height:82px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    float: left;
-}
-
-#MenuIcon{
-    display:grid;
-    grid-template-columns:1fr;
-   width:100vw;
-   height:auto;
-    
-}
-
-#onSiteBtn{
-    background-color:#8ACFE5;
-    color:#011827;
-    
 
 }
+
+.menuIcon{
+  grid-column:1/-1;
+  width: 100%;
+  display: block;
+}
+
+#onSiteBtn {
+  display: block;
+
+  width: 300px;
+  margin: 2rem auto;
+
+  padding: 2rem;
+
+  background: #9dc3d8;
+  border: none;
+  border-radius: 5px;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  margin:auto;
+}
+
