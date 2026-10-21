@@ -5,10 +5,13 @@ body {
 }
 
 .Header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-areas: "logo title" "image image";
-  background: #02152b;
+  background: #011827;
+  padding: 1rem;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
 }
 
 #Logo {
@@ -19,22 +22,49 @@ body {
 }
 
 .Header h1 {
+  display: flex;
   color: white;
-  align-self: center;
+  align-items: center;
   margin: 0;
   font-size: 2rem;
+  padding-right: 100px;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .menu {
     display: none;
   }
 }
 
+.contactUs h2:hover {
+  text-decoration: underline;
+  color: #36769d;
+}
+
 .menuIcon {
-  grid-column: 1/-1;
   width: 100%;
+  height: auto;
   display: block;
+}
+
+@media (max-width: 800px) {
+  .challengeBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  #onlineBtn {
+    font-size: 0.9rem;
+    color: #36769d;
+    text-decoration: underline;
+    border: 0px;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
 }
 
 #onSiteBtn {
@@ -51,7 +81,225 @@ body {
 
 h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1, 5rem;
   font-weight: 300;
   margin: auto;
+}
+
+@media (min-width: 800px) {
+  .menu {
+    display: flex;
+    gap: 30px;
+    color: white;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    padding-bottom: 30px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 800px) {
+  .challengeBtn {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 800px) {
+  #challengeBtnPicture {
+    position: relative;
+    top: -75px;
+  }
+}
+
+@media (min-width: 800px) {
+  #onlineBtn {
+    background-color: #E3170A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    width: 300px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-decoration: none;
+    order: -1;
+  }
+}
+
+footer {
+  background-color: #011827;
+  color: white;
+  font-size: 1rem;
+  padding: 50px 10px;
+}
+
+footer h3:hover,
+footer p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.quotes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+@media (min-width: 800px) {
+  .quotes {
+    position: relative;
+    top: -40px;
+  }
+}
+
+.quote img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.quote-author {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 800px) {
+  #quote-mobile {
+    display: none;
+  }
+}
+
+.rooms {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.info {
+  padding-left: 5px;
+}
+
+.Room1,
+.Room2,
+.Room3 {
+  flex: 0 0 300px;
+  background: white;
+  border-radius: 10px;
+  scroll-snap-align: start;
+}
+
+.Room1 img,
+.Room2 img,
+.Room3 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stars {
+  color: red;
+  font-size: 1rem;
+}
+
+.players {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.bookBtn {
+  background-color: #E3170A;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  float: right;
+  padding: 8px 15px;
+  margin: 5px;
+}
+
+.story {
+  background-color: #011827;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.storyText {
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.readBtn {
+  color: #8ACFE5;
+  background-color: #011827;
+  border: 2px solid #8bc3dd;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 800px) {
+  .story {
+    padding: 100px 150px;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .readBtn {
+    padding: 1, 5rem 3rem;
+    font-size: 1, 5rem;
+    position: relative;
+    top: -20px;
+  }
+}
+
+.picture {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sectionTitle {
+  font-size: 1, 5rem;
+  padding-left: 10px;
+}
+
+.sectionText {
+  font-size: 1, 2rem;
+  padding-left: 10px;
+}
+
+.bookOnSite {
+  background-color: #E3170A;
+  color: white;
+  border-radius: 5px;
+  border: 0px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin: 0 0 50px 5px;
 }

@@ -6,14 +6,15 @@ body {
 }
 
 .Header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-areas:
-    "logo title"
-    "image image";
-
-  background: #02152b;
+  background: #011827;
+  padding:1rem;
 }
+
+.topRow{
+    display: flex;
+    align-items: center;
+}
+
 
 #Logo {
   width: 128px;
@@ -23,25 +24,51 @@ body {
 }
 
 .Header h1 {
+  display:flex;
   color: white;
-  align-self: center;
+  align-items: center;
   margin: 0;
   font-size: 2rem;
+  padding-right:100px;
+  margin-bottom: 20px;
 }
 
 .menu {
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
         display:none;}
+}
 
+.contactUs h2:hover{
+    text-decoration: underline;
+    color:#36769d
 }
 
 .menuIcon{
-  grid-column:1/-1;
   width: 100%;
-  display: block;
+  height: auto;
+  display:block;
+}
+
+.challengeBtn{
+    @media(max-width:800px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
+#onlineBtn{
+    @media(max-width:800px){
+    font-size: 0.9rem;
+    color: #36769d;
+    text-decoration: underline;
+    border:0px;
+    gap: 10px;
+    margin-bottom:50px;
+}
 }
 
 #onSiteBtn {
+
   display: block;
 
   width: 300px;
@@ -52,14 +79,66 @@ body {
   background: #9dc3d8;
   border: none;
   border-radius: 5px;
-
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1,5rem;
   font-weight: 300;
   margin:auto;
 }
+
+.menu{
+@media (min-width: 800px) {
+    display: flex;
+    gap: 30px;  
+    color:white;
+    flex-wrap:nowrap;
+    white-space: nowrap;
+    padding-bottom: 30px;
+    margin-left:auto;
+}
+}
+
+.challengeBtn{
+    @media (min-width:800px){
+        display:flex;
+        justify-content: space-between;
+    }
+}
+
+#challengeBtnPicture{
+    @media(min-width:800px){
+     position:relative;
+     top: -75px;
+    }
+}
+
+#onSiteBtn{
+    @media (min-width:800px){
+    
+    }
+
+}
+
+#onlineBtn{
+    @media (min-width:800px){
+       background-color: #E3170A;
+       color:white;
+       border: none;
+       border-radius: 5px;
+       font-size: 1.5rem;
+       font-weight: bold;
+       display: block;
+       width: 300px;
+       margin: 2rem auto;
+       padding: 2rem;
+       text-decoration: none;
+       order:-1;
+}
+}
+
+
 
