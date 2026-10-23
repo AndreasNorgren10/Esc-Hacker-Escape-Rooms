@@ -219,7 +219,7 @@ blockquote {
 }
 
 @media (max-width: 800px) {
-  #quote-mobile {
+  #quoteMobile {
     display: none;
   }
 }

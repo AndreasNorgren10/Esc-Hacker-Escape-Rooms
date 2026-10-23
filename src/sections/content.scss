@@ -42,7 +42,7 @@ blockquote {
     gap: 1rem;
 }
 
-#quote-mobile{
+#quoteMobile{
     @media (max-width: 800px) {
         display:none;}
 }
