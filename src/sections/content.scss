@@ -7,7 +7,7 @@
 .quotes {
     @media(min-width:800px){
         position: relative;
-        top:-40px;
+        top:-60px;
 
     }
 }
@@ -45,6 +45,8 @@ blockquote {
 #quoteMobile{
     @media (max-width: 800px) {
         display:none;}
+
+
 }
 
 
