@@ -2,10 +2,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 2rem;
-    max-width: 600px;
-    margin: 0 auto;
-    flex: 1;
+    margin:20px;
 }
 
 .quotes {
@@ -16,23 +13,34 @@
     }
 }
 
-.quote img {
+.quoteImg {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.quote-text {
+.quoteText {
     font-size: 1.2rem;
     font-style: italic;
     margin-bottom: 0.5rem;
     color: #333;
 }
 
-.quote-author {
+.quoteContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.quoteAuthor {
     font-size: 0.9rem;
     color: #666;
+}
+
+#quoteMobile{
+    display:flex;
+    align-items: center;
+    gap:1rem;
 }
 
 #quote-mobile{
@@ -46,9 +54,9 @@
     display: flex;
     overflow-x: auto;
     gap: 1rem;
-
     padding: 1rem;
     scroll-snap-type: x mandatory;
+    margin:0 20px;
 }
 .info{
     padding-left:5px;
@@ -161,4 +169,44 @@
     font-size: 1rem;
     margin:0 0 50px 5px;
 
+}
+
+.content{
+    @media (min-width:800px){
+        display: flex;
+        align-items: center; 
+    }
+}
+
+.content1{
+    @media(min-width:800px){
+       width:50%;
+    }
+}
+
+.content2{
+    @media(min-width:800px){
+        width:50%;
+    }
+}
+
+.content3{
+    @media(min-width:800px){
+      width:50%;
+    }
+}
+
+.content4{
+    @media(min-width:800px){
+        width:50%;
+        order:-1;
+    }
+}
+.content2,
+.content4{
+    @media(min-width:800px){
+        width:50%;
+        box-sizing: border-box;
+        padding:0 4rem; 
+    }
 }

@@ -10,3 +10,40 @@ footer p:hover{
     text-decoration: underline;
     cursor:pointer;
 }
+
+footer{
+    @media(min-width:800px){
+   display:flex;
+   flex-direction: row;
+   justify-content:space-around;
+   font-size:0.9em;
+}
+}
+
+footer h3{
+    @media(min-width:800px){
+       font-size:1.2; 
+    }
+}
+.footerInfo{
+    @media(min-width:800px){
+        max-width: 250px;
+    }
+
+}
+
+.shortCuts{
+    @media(min-width:800px){
+        max-width: 250px;
+    }
+
+}
+
+.socials{
+    @media(min-width:800px){
+        max-width: 250px;
+    }
+
+}
+
+

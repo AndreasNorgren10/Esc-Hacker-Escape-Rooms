@@ -142,14 +142,44 @@ footer p:hover {
   cursor: pointer;
 }
 
+@media (min-width: 800px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 800px) {
+  footer h3 {
+    font-size: 1.2;
+  }
+}
+
+@media (min-width: 800px) {
+  .footerInfo {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 800px) {
+  .shortCuts {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 800px) {
+  .socials {
+    max-width: 250px;
+  }
+}
+
 .quotes {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 2rem;
-  max-width: 600px;
-  margin: 0 auto;
-  flex: 1;
+  margin: 20px;
 }
 
 @media (min-width: 800px) {
@@ -159,23 +189,34 @@ footer p:hover {
   }
 }
 
-.quote img {
+.quoteImg {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.quote-text {
+.quoteText {
   font-size: 1.2rem;
   font-style: italic;
   margin-bottom: 0.5rem;
   color: #333;
 }
 
-.quote-author {
+.quoteContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.quoteAuthor {
   font-size: 0.9rem;
   color: #666;
+}
+
+#quoteMobile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 @media (max-width: 800px) {
@@ -190,6 +231,7 @@ footer p:hover {
   gap: 1rem;
   padding: 1rem;
   scroll-snap-type: x mandatory;
+  margin: 0 20px;
 }
 
 .info {
@@ -264,7 +306,7 @@ footer p:hover {
 
 @media (min-width: 800px) {
   .story {
-    padding: 100px 150px;
+    padding: 75px 150px;
     font-size: 2rem;
   }
 }
@@ -302,4 +344,45 @@ footer p:hover {
   padding: 1rem 2rem;
   font-size: 1rem;
   margin: 0 0 50px 5px;
+}
+
+@media (min-width: 800px) {
+  .content {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 800px) {
+  .content1 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  .content2 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  .content3 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  .content4 {
+    width: 50%;
+    order: -1;
+  }
+}
+
+@media (min-width: 800px) {
+  .content2,
+  .content4 {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 4rem;
+  }
 }
