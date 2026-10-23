@@ -177,7 +177,6 @@ footer p:hover {
 
 .quotes {
   display: flex;
-  align-items: center;
   gap: 1rem;
   margin: 20px;
 }
